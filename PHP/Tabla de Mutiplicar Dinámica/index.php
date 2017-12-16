@@ -9,23 +9,25 @@
 <body>
 
 <form action="#" method="post">
-<input type="text" name="" value="num1">
-<input type="text" name="" value="num2">
+<input type="text" name="num1" >
+<input type="text" name="num2" >
 <input type="submit" value="Calcular">
 
 
 </form>
 
 <?php
-$num1=$_POST["num1"];
-$num2=$_POST["num2"];
+
+$num1=$_POST['num1'];
+$num2=$_POST['num2'];
 $resultado;
 $i;
 
-for ($i=1;$i<=10;$i++){
-    for($num1=1;$num1<=$num2;$num1++){
-        $resultado=$num1*$i;
-        echo("Hola $resultado");
+for ($num1=$num1;$num1<=$num2;$num1++){
+    for($i=1;$i<=10;$i++){
+        $resultado=$num1 * $i;
+        echo("<br>");
+        echo("$num1 x $i = $resultado");
     }
 }
 
