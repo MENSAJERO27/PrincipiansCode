@@ -32,6 +32,7 @@
 
      }
     ?>
+    <!-- Fin del código php -->
 
 </body>
 </html>
